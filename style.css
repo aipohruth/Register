@@ -104,10 +104,11 @@ button:hover{
 }
 @media (max-width:520px){
     .card-box{
+        
         padding: 25px 0px;
         width: 350px;
-        height: 325px;
-        margin: 20% auto;
+        height: 330px;
+        margin: 25% auto;
       
     }
 }
