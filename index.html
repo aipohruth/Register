@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Sign-Up Form</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="card-box">
+    <h1>SIGN UP</h1>
+    <form>
+    <div class="form">
+
+    <div class="input">
+        <input type="text" placeholder=" Enter User-name" required >   
+    </div>
+    <div class="input">
+        <input type="email" placeholder=" Enter Email" required >   
+    </div>
+    <div class="input">
+        <input type="password" id="myInput" placeholder=" Enter Password" required >
+        <span class="eyes" onclick="myFunction()"> 
+        <i class="fa fa-eye" id="hide1"></i>
+        <i class="fa fa-eye-slash" id="hide2"></i>
+        </span>
+    </div>
+
+    <div class="input">
+        <input type="password" id="cnfpwd" placeholder=" Confirm Password" required > 
+        <span class="eyes" onclick="myFunction1()"> 
+        <i class="fa fa-eye" id="hide3"></i>
+        <i class="fa fa-eye-slash" id="hide4"></i>
+        </span>  
+        </div> 
+    </div>
+    <div class="privacy">
+        <input type="checkbox" required>
+    <span> I agree to the <a href="#">TERMS AND CONDITIONS</a> and <a href="#"> PRIVACY POLICY</a></span></div>
+
+    <button class="btn" type="submit">Sign Up</button>
+    </div>
+    </form>
+
+    <script> 
+    function myFunction(){
+        var x = document.getElementById('myInput');
+        var y = document.getElementById('hide1');
+        var z = document.getElementById('hide2');
+        if(x.type === 'password'){
+            x.type = 'text';
+            y.style.display = 'block';
+            z.style.display = 'none';
+        }
+        else{
+            x.type = 'password';
+            y.style.display = 'none';
+            z.style.display = 'block';
+        }
+    }
+
+        function myFunction1(){
+        var a = document.getElementById('cnfpwd');
+        var b = document.getElementById('hide3');
+        var c = document.getElementById('hide4');
+        if(a.type === 'password'){
+            a.type = 'text';
+            b.style.display = 'block';
+            c.style.display = 'none';
+        }
+        else{
+            a.type = 'password';
+            b.style.display = 'none';
+            c.style.display = 'block';
+        }
+    }
+    
+    
+    </script>
+
+   
+</body>
+</html>
